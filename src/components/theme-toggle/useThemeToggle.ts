@@ -3,23 +3,15 @@
 import { useTheme } from "next-themes";
 
 export const useThemeToggle = () => {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
-  const setLightTheme = () => {
-    setTheme("light");
-  };
-
-  const setDarkTheme = () => {
-    setTheme("dark");
-  };
-
-  const setSystemTheme = () => {
-    setTheme("system");
+  const toggle = () => {
+    setTheme((oldValue) => {
+      return theme === "dark" ? "light" : "dark";
+    });
   };
 
   return {
-    setLightTheme,
-    setDarkTheme,
-    setSystemTheme,
+    toggle,
   };
 };

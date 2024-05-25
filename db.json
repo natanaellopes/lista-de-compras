@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Arroz",
+      "price": 10,
+      "quantity": 1
+    },
+    {
+      "id": "2",
+      "name": "Pão de forma",
+      "price": 12,
+      "quantity": 2
+    }    
+  ]
+}

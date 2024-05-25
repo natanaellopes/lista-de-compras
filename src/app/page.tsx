@@ -1,9 +1,16 @@
-import { ModeToggle } from "@/components/theme-toggle/theme-toggle";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { ProductList, ProductListSkeleton } from "@/components/ProductList";
+import { Suspense } from "react";
 
-export default function Home() {
+export default function Component() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ModeToggle />
-    </main>
+    <div className="flex flex-col gap-8">
+      <Header />
+      <Suspense fallback={<ProductListSkeleton />}>
+        <ProductList />
+      </Suspense>
+      <Footer />
+    </div>
   );
 }
