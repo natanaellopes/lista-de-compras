@@ -11,6 +11,12 @@
       "name": "Pão de forma",
       "price": 12,
       "quantity": 2
-    }    
+    },
+    {
+      "id": "600f",
+      "name": "Café",
+      "price": 1,
+      "quantity": 13
+    }
   ]
 }
