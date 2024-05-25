@@ -17,6 +17,12 @@
       "name": "Café",
       "price": 1,
       "quantity": 13
+    },
+    {
+      "id": "0122",
+      "name": "Feijão",
+      "price": 12,
+      "quantity": 1
     }
   ]
 }
